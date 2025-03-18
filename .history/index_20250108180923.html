@@ -28,7 +28,7 @@
           // Prepare key-value pairs for the Play Store URL
           const paramsArray = [];
           urlParams.forEach((value, key) => {
-            if (['userid', 'name', 'dob', 'image'].includes(key)) {
+            if (['userid', 'name', 'dob'].includes(key)) {
               paramsArray.push(`${encodeURIComponent(key)}%3D${encodeURIComponent(value)}`); // Encode only required keys
             }
           });
